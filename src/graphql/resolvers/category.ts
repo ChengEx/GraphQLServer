@@ -10,9 +10,10 @@ const categoryResolvers = {
                 throw new Error(err);
             }
         },
-        async getCategoryByPath(_: any, path: String) {
+        async getCategoryByPath(_: any, categoryNameEN: String) {
             try {
-
+                const categoryObj = await categoryModel.findOne(categoryNameEN);
+                return categoryObj;
             }catch(err: any) {
                 throw new Error(err);
             }

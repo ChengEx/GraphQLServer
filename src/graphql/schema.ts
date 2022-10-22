@@ -51,7 +51,7 @@ const schema = gql(`
         getProductById(_id: String): Product
 
         getAllCategory: [Category]
-        getCategoryByPath: Category
+        getCategoryByPath(categoryNameEN: String): Category
     }
 
 `)
