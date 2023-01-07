@@ -18,7 +18,7 @@ const schema = gql(`
     type Product {
         id: ID
         name: String
-        category: String
+        category: Category
         subcategory: String
         productDetail: ProductDetail
         createdBy: Student
