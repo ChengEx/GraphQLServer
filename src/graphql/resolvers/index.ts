@@ -8,11 +8,9 @@ const resolvers = {
         ...productResolvers.Query,
         ...categoryResolvers.Query
     },
-    
-    //,
-    // Subscription:{
-    //     ...postsResolvers.Subscription
-    // }
+    Mutation: {
+        ...studentResolvers.Mutation
+    }
 }
 
 export default resolvers;
